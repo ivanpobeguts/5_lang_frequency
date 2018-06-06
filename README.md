@@ -1,6 +1,6 @@
 # Frequency Analysis of Words
 
-[TODO. There will be project description]
+The script shows 10 most common words in the text file.
 
 # Project Goals
 

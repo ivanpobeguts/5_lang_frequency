@@ -1,5 +1,6 @@
 import re
 import sys
+from collections import Counter
 
 
 def load_data(filepath):
@@ -8,10 +9,8 @@ def load_data(filepath):
 
 
 def get_most_frequent_words(text):
-    regex = r'\w+'
-    words_list = re.findall(regex, text)
-    frequency_dict = {word: words_list.count(word) for word in words_list}
-    return sorted(frequency_dict.items(), key=lambda item: item[1], reverse=True)[:10]
+    words_list = re.findall(r'\w+', text)
+    return Counter(words_list).most_common(10)
 
 
 if __name__ == '__main__':

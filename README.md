@@ -10,7 +10,7 @@ Example of script launch on Linux, Python 3.5:
 
 ```bash
 
-python lang_frequency.py text.txt
+$ python lang_frequency.py text.txt
 
 "и" : 4660
 "в" : 2168

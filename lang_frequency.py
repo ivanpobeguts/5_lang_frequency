@@ -19,7 +19,7 @@ if __name__ == '__main__':
         text = load_data(sys.argv[1])
         frequent_words = get_most_frequent_words(text)
         for word, amount in frequent_words:
-            print('The word "{}" occurs in the text "{}" times'.format(word, amount))
+            print('"{}" : {}'.format(word, amount))
     except IndexError:
         print('Specify file path.')
     except FileNotFoundError:
